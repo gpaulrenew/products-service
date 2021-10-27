@@ -1,0 +1,17 @@
+server:
+  port: 8090
+
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mydb?allowPublicKeyRetrieval=false&useSSL=false
+    username: "root"
+    password: ""
+
+  application:
+    name: promocode-service
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+
+
+
