@@ -1,9 +1,6 @@
 package com.products.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.math.BigDecimal;
 
 @Entity
@@ -48,4 +45,15 @@ public class Product {
     private String name;
     private String description;
     private BigDecimal price;
+
+    public String getPromoCode() {
+        return promoCode;
+    }
+
+    public void setPromoCode(String promoCode) {
+        this.promoCode = promoCode;
+    }
+
+    @Transient
+    private String promoCode;
 }
